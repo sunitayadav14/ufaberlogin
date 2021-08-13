@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin:auto;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Georama', sans-serif;
+    
+   
+}
+.container-fluid{
+    display:flex;
+    width:100%;
+    background-color: burlywood;
+}
+body
+{   
+    display:flex;
+    height:100%;
+    width:100%;
+    background-color:rgb(235, 208, 176);
+    background:#fff;
+   
+    
+}
+.container{
+    max-width:400px;
+    border-radius: 20px;
+} 
+.card{
+    border-radius: 20px;
+    height:600px;
+    border:none;
+    overflow: hidden;
+    box-shadow: 0 5px 8px #414141;
+    z-index:0;
+    box-sizing: border-box;
+   
+}
+.circle{
+    position:absolute;
+    bottom:-230px;
+    left:80%;
+    transform:translate(-50%,-50%);
+    background:#fff;
+    clip-path:circle(50%);
+    height:700px;
+    width:700px;
+    z-index:-1;
+    overflow:hidden;
+    padding-left: 780px;
+}
+.myHed{
+    margin-top:30px;
+    font-size: 20px;
+    margin-bottom:10px;
+    font-weight:700;
+    color:black;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+form .form-group input:focus ~ label,
+form . input:valid ~ label{
+    top: 0%;
+    font-size: 16px;
+    color: #ff5e78;
+    background: #fff;
+    transform:translateY(-50%);
+}
+
+
+.myHed h6{
+color:red;
+}
+.far{
+    font-size:40px;
+}
+.fas{
+    position:relative;
+    display:block;
+    left:-87px;
+    top:30px;
+    color:rgb(255,255,255);
+}
+.button{
+    width:300px;
+    border-radius: 5px;
+    background-color: blueviolet ;
+    color:#fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+.myInput{
+    width:300px;
+    padding:10px;
+    padding-left:40px;
+    border-radius: 5px;
+    background-color:1px  solid lightslategray;
+    color:rgb(177, 174, 174);
+    border:1px  solid lightslategray;
+    display: block;
+}
+.con{
+    left:2px;
+    margin:0px;
+    padding:0px;
+    font-size: 15px;
+    font-weight: 20px;
+}
+.form-group .country{
+    
+    align-items: center;
+    width:300px;
+    padding:10px;
+    padding-left:45px;
+    border-radius: 5px;
+    background-color:1px  solid lightslategray;
+    color:rgb(177, 174, 174);
+    border:1px  solid lightslategray;
+    display: block;
+}
+
+.form-group .country::placeholder{
+    color:rgb(32, 29, 29);
+    opacity: 0.6;
+}
+
+.form-group .country:hover{
+    color:rgb(17, 16, 16);
+    
+}
+.myInput::placeholder{
+    color:rgb(63, 59, 59);
+    opacity: 0.6;
+}
+.myInput:focus{
+    border:1px  solid lightslategray;
+    outline:none;
+}
+.check1{
+    font-weight: 500;
+    color:rgb(85,85,85);
+    font-size: 12px;
+    margin:5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .container{
+        max-width: 100%;
+    }
+}
+
+  

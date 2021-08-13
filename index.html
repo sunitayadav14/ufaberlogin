@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Form Design</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https:/s.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link href="asset/css/style.css" rel="stylesheet"> 
+</head>
+<body> 
+<div class="container-fluid col-md-12 mt-3">
+  
+    <div class="container">
+        <div class="card">
+            <div class="card-body">
+                <div class="circle"></div>
+                <header class="myHed text-center">
+                    <i class="far fa-user"></i>
+                    <p>Book a Free Demo CLass</p>
+                    <h6>Limited seats only!</h6>
+                </header>
+               
+                <form class="main-form text-center"  name="myForm"  action="#"onsubmit="return validation());">
+   
+                    <div class="form-group my-0">
+                        <label class="my-0" >
+                            <i class="fas fa-mobile"></i>
+                            <input type="text" class="myInput" name="num" id="numbe" placeholder="Eter Mobile Number" autocomplete="off"> 
+                            
+                            <span id="numberid"></span>
+                        </label> 
+                    </div>
+                    <br>
+                    <div class="form-group my-0">
+                        <label class="my-0  error">
+                            <i class="fas fa-user"></i>
+                            <input type="text" class="myInput" name="name"id="Name"  placeholder="Enter Full Name" autocomplete="off"> 
+                            
+                            <span id="usernameid"></span>
+                        </label>
+                    </div>
+                    <br>
+                    <div class="form-group my-0">
+                        <label class="my-0  error">
+                            <i class="fas fa-user"></i>
+                            <input type="text" class="myInput" name="email"id="Email"  placeholder=" Enter Email ID" autocomplete="off"> 
+                            
+                            <span id="emailid"></span>
+                        </label>
+                    </div>
+                    <br>
+                
+                    <br>
+                    <div class="con">
+                         <label>
+                            what describe you best?
+                         </label>
+                    </div>
+                    <br>
+                    <div class="form-group mb-12">
+                        <select class="country">
+                            <option>select options</option>
+                            <br>
+                            <option value="1">College Student</option>
+                            <br>
+                            <option value="2">Working Professional</option>
+                            <br>
+                            <option value="3">Full Time Aspirant</option>
+                            <br>
+                            <option value="3">Other</option>v
+                        </select>
+                    
+                    </div>
+                    <div class="form-group">
+                        <label> <a href="package.html">
+                            <input type="submit" class="form-control button" value="Submit"> 
+                        </label>
+                    </div>
+                    <span class="check1">by clicking on "submit button" you explicity solicit and a callfrom ufaber</span>
+                </form>
+            </div>
+        </div>
+    </div>
+</div> 
+</div>    
+
+
+
+<script type = "text/javascript">
+    
+       // Form validation code will come here.
+       function validation() {
+       
+         var user =document.getElementById('Name').value;
+         var num =document.getElementById('numbe').value;
+         var email =document.getElementById('Email').value;
+
+         if( user == ""){
+             document.getElementById("usernameid").innerHTML = "** please fill ";
+             return false;
+         }
+       }
+   
+ </script>
+    
+
+
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
